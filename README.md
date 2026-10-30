@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/gradient.svg?title=Maza+Punto+de+Venta&amp;subtitle=Un+sistema+de+punto+de+venta.&amp;logo=lu%3AStore&amp;mode=dark&amp;border=false" />
+    <img alt="Maza Punto de Venta" src="https://shieldcn.dev/header/gradient.svg?title=Maza+Punto+de+Venta&amp;subtitle=Un+sistema+de+punto+de+venta.&amp;logo=lu%3AStore&amp;mode=light&amp;border=false" />
+  </picture>
+</p>
 
-## Getting Started
+<p align="center">
+  <a href="https://isahecam.dev"><img alt="Sitio web" src="https://shieldcn.dev/badge/isahecam.dev-c96442.svg?size=xs&amp;variant=secondary&amp;height=18&amp;fontSize=10&amp;iconSize=10&amp;padX=6&amp;logo=lu%3AGlobe" /></a>
+  <a href="https://nextjs.org"><img alt="Next.js 16" src="https://shieldcn.dev/badge/Next.js-16-000000.svg?size=xs&amp;variant=secondary&amp;height=18&amp;fontSize=10&amp;iconSize=10&amp;padX=6&amp;logo=nextdotjs" /></a>
+  <a href="https://react.dev"><img alt="React 19" src="https://shieldcn.dev/badge/React-19-61DAFB.svg?size=xs&amp;variant=secondary&amp;height=18&amp;fontSize=10&amp;iconSize=10&amp;padX=6&amp;logo=react" /></a>
+  <a href="https://www.typescriptlang.org"><img alt="TypeScript 5" src="https://shieldcn.dev/badge/TypeScript-5-3178C6.svg?size=xs&amp;variant=secondary&amp;height=18&amp;fontSize=10&amp;iconSize=10&amp;padX=6&amp;logo=typescript" /></a>
+  <a href="https://tailwindcss.com"><img alt="Tailwind CSS 4" src="https://shieldcn.dev/badge/Tailwind_CSS-4-06B6D4.svg?size=xs&amp;variant=secondary&amp;height=18&amp;fontSize=10&amp;iconSize=10&amp;padX=6&amp;logo=tailwindcss" /></a>
+  <a href="https://ui.shadcn.com"><img alt="shadcn/ui" src="https://shieldcn.dev/badge/shadcn%2Fui-000000.svg?size=xs&amp;variant=secondary&amp;height=18&amp;fontSize=10&amp;iconSize=10&amp;padX=6&amp;logo=shadcnui" /></a>
+</p>
 
-First, run the development server:
+## Descripción general
+
+Sistema de punto de venta para artículos de limpieza: desde escobas hasta todo tipo de productos de limpieza, incluida la venta a granel.
+
+## Tecnologías
+
+- [Next.js 16](https://nextjs.org) (App Router)
+- [React 19](https://react.dev) con [React Compiler](https://react.dev/learn/react-compiler)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [shadcn/ui](https://ui.shadcn.com) sobre [Base UI](https://base-ui.com), con íconos de [Lucide](https://lucide.dev)
+- [Oxc](https://oxc.rs) (oxlint, oxfmt), [Knip](https://knip.dev), [commitlint](https://commitlint.js.org) y [Lefthook](https://lefthook.dev)
+- [pnpm](https://pnpm.io)
+
+## Primeros pasos
+
+### Requisitos previos
+
+- Node.js
+- pnpm 12
+
+### 1. Instalar
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <url-del-repositorio>
+cd maza-punto-venta
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Ejecutar la aplicación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abre [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+### Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Comando          | Descripción                                       |
+| ---------------- | ------------------------------------------------- |
+| `pnpm dev`       | Inicia el servidor de desarrollo                  |
+| `pnpm build`     | Genera la build de producción                     |
+| `pnpm start`     | Inicia el servidor de producción                  |
+| `pnpm typecheck` | Verifica los tipos con TypeScript                 |
+| `pnpm lint`      | Analiza el código con oxlint                      |
+| `pnpm fmt`       | Formatea el código con oxfmt                      |
+| `pnpm fmt:check` | Comprueba el formato sin modificar archivos       |
+| `pnpm knip`      | Detecta archivos, exports y dependencias sin usar |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contacto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+¿Tienes preguntas, ideas o comentarios? Contáctame a través de mi [sitio web](https://isahecam.dev), en [GitHub](https://github.com/isahecam) o en [X](https://x.com/isahecam).
