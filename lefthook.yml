@@ -1,0 +1,29 @@
+# Sin Git LFS: evita conexiones SSH extra en `pre-push`.
+skip_lfs: true
+
+pre-commit:
+  piped: true
+  jobs:
+    - name: oxlint
+      glob: "*.{js,jsx,ts,tsx,mjs,cjs}"
+      run: pnpm oxlint --fix --no-error-on-unmatched-pattern {staged_files}
+      stage_fixed: true
+
+    - name: oxfmt
+      glob: "*.{js,jsx,ts,tsx,mjs,cjs,json,jsonc,md,css,scss,yml,yaml}"
+      run: pnpm oxfmt --no-error-on-unmatched-pattern {staged_files}
+      stage_fixed: true
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm commitlint --edit {1}
+
+# Secuencial a propósito: `parallel: true` cuelga el hook en Windows
+# (https://github.com/evilmartians/lefthook/issues/1256).
+pre-push:
+  jobs:
+    - name: typecheck
+      run: pnpm typecheck
+    - name: knip
+      run: pnpm knip
