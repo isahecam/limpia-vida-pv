@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "nextjs", "react", "jsx-a11y", "import"],
+  "jsPlugins": ["@shadcn/lint"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    // @shadcn/lint Plugin
+    "shadcn/no-arbitrary-values": "error",
+    "shadcn/no-restyle": [
+      "error",
+      {
+        "allow": ["layout"],
+        "contracts": [
+          {
+            "pattern": "^Button$",
+            "allow": ["w-full", "mt-*", "mb-*"]
+          },
+          {
+            "pattern": "^CardTitle$",
+            "allow": ["layout", "typography"],
+            "deny": ["font-*"]
+          },
+          {
+            "pattern": "^CardContent$",
+            "allow": ["layout", "spacing"]
+          }
+        ]
+      }
+    ],
+    "shadcn/no-inline-styles": "error",
+    "shadcn/no-raw-colors": "error",
+    "shadcn/no-unknown-classes": "warn",
+    "shadcn/require-static-classes": "error"
+  },
+  "env": {
+    "builtin": true
+  }
+}
