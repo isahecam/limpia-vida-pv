@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
@@ -14,8 +14,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Limpia Vida",
-  description: "Productos de limpieza",
+  metadataBase: new URL("https://limpia-vida.isahecam.com"),
+  title: {
+    default: "Limpia Vida — Productos de limpieza",
+    template: "%s | Limpia Vida",
+  },
+  description: "Sistema de punto de venta para productos de limpieza.",
+  openGraph: {
+    title: "Limpia Vida — Productos de limpieza",
+    description: "Sistema de punto de venta para productos de limpieza.",
+    url: "/",
+    siteName: "Limpia Vida",
+    locale: "es_MX",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Limpia Vida — Productos de limpieza",
+    description: "Sistema de punto de venta para productos de limpieza.",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
+/** Equivalen a `--primary` de `globals.css` */
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#0669e1" },
+    { media: "(prefers-color-scheme: dark)", color: "#4599ff" },
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
