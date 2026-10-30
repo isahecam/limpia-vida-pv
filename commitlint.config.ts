@@ -16,7 +16,18 @@ const types = [
 ];
 
 /** Scopes opcionales; si se indican, deben ser uno de estos. */
-const scopes = ["app", "ui", "api", "auth", "db", "config", "deps", "tooling", "release"];
+const scopes = [
+  "app",
+  "ui",
+  "api",
+  "auth",
+  "db",
+  "config",
+  "deps",
+  "tooling",
+  "release",
+  "dashboard",
+];
 
 const config: UserConfig = {
   extends: ["@commitlint/config-conventional"],
