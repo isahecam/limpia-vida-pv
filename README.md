@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/gradient.svg?title=Maza+Punto+de+Venta&amp;subtitle=Un+sistema+de+punto+de+venta.&amp;logo=lu%3AStore&amp;mode=dark&amp;border=false" />
-    <img alt="Maza Punto de Venta" src="https://shieldcn.dev/header/gradient.svg?title=Maza+Punto+de+Venta&amp;subtitle=Un+sistema+de+punto+de+venta.&amp;logo=lu%3AStore&amp;mode=light&amp;border=false" />
-  </picture>
+  <img alt="Limpia Vida" src="https://shieldcn.dev/header/gradient.svg?title=Limpia+Vida&amp;subtitle=Productos+de+limpieza&amp;logo=lu%3AStore&amp;mode=dark&amp;border=false" />
 </p>
 
 <p align="center">
@@ -39,7 +36,7 @@ Sistema de punto de venta para artículos de limpieza: desde escobas hasta todo 
 
 ```bash
 git clone <url-del-repositorio>
-cd maza-punto-venta
+cd limpia-vida-pv
 pnpm install
 ```
 
