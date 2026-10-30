@@ -2,5 +2,6 @@
   "$schema": "https://unpkg.com/knip@6/schema.json",
   "tags": ["-lintignore"],
   "ignoreFiles": ["lib/utils.ts", ".agents/**"],
+  "ignoreIssues": { "components/ui/**": ["exports"] },
   "ignoreDependencies": ["@base-ui/react", "class-variance-authority", "cn", "lucide-react"]
 }

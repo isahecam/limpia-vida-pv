@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "ignorePatterns": [".agents", ".claude/skills"],
+  "ignorePatterns": [".agents", ".claude/skills", "components/ui"],
   "plugins": ["typescript", "unicorn", "oxc", "nextjs", "react", "jsx-a11y", "import"],
   "jsPlugins": ["@shadcn/lint"],
   "categories": {
